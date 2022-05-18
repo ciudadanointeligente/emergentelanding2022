@@ -1,0 +1,485 @@
+body {
+    font-size: 14px;
+}
+
+.portada {
+    background-image: url(../img/texture-white-ruido.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px;
+    margin: 0px;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.portada .logo-emergentes {
+    width: 380px;
+}
+
+h2,
+p,
+a {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.informacion-emergentes {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.informacion-emergentes h2 {
+    text-align: center;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    line-height: 35px;
+}
+
+.informacion-emergentes h2.texto-desktop {
+    display: block;
+}
+
+.informacion-emergentes h2.texto-movil {
+    display: none;
+}
+
+.informacion-emergentes h2 span {
+    border-bottom: 6px #00C853 solid;
+    font-weight: bold;
+}
+
+
+.informacion-emergentes .btn-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.informacion-emergentes .btn-box a {
+    padding: 8px 40px;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.5s all;
+    font-size: 1.2em;
+}
+
+.informacion-emergentes .btn-box a:hover {
+    background: #BF43D4;
+}
+
+.informacion-emergentes .fecha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.informacion-emergentes .fecha .mes p {
+    color: black;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding-right: 50px;
+}
+
+.informacion-emergentes .fecha .fechas {
+    display: flex;
+    flex-direction: column;
+}
+
+.informacion-emergentes .fecha .fechas .numeros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+.informacion-emergentes .fecha .fechas .numeros:last-child {
+    margin-bottom: 0px;
+}
+
+.informacion-emergentes .fecha .fechas .numeros img {
+    width: 30px;
+    height: auto;
+    align-self: center;
+    margin-right: 5px;
+}
+
+.informacion-emergentes .fecha .fechas .numeros p {
+    margin-bottom: 0px;
+    font-size: 1.7em;
+    font-weight: 800;
+}
+
+.informacion-emergentes .fecha .fechas .numeros p span {
+    border-left: 4px #00C853 solid;
+    padding-left: 15px;
+    margin-left: 15px;
+}
+
+
+footer {
+    background: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer p {
+    color: white;
+    padding-right: 30px;
+    font-size: 1.1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+footer .logos-organizadores {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer .logos-organizadores img {
+    align-self: center;
+}
+
+footer .logos-organizadores img.logo-colunga {
+    width: 70px;
+    margin-right: 60px;
+}
+
+footer .logos-organizadores img.logo-fci {
+    width: 160px;
+    margin-right: 60px;
+}
+
+footer .logos-organizadores img.logo-imago {
+    width: 90px;
+}
+
+footer .logo-colaborador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer .logo-colaborador img {
+    width: 200px;
+}
+
+
+@media(max-width:1300px) {
+    .portada .logo-emergentes {
+        width: 350px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    footer .logos-organizadores img.logo-colunga {
+        width: 60px;
+        margin-right: 50px;
+    }
+
+    footer .logos-organizadores img.logo-fci {
+        width: 140px;
+        margin-right: 50px;
+    }
+
+    footer .logos-organizadores img.logo-imago {
+        width: 70px;
+    }
+
+    footer .logo-colaborador img {
+        width: 170px;
+    }
+}
+
+
+@media(max-width:991px) {
+    .portada .logo-emergentes {
+        width: 350px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    footer .logos-organizadores img.logo-colunga {
+        width: 50px;
+        margin-right: 50px;
+    }
+
+    footer .logos-organizadores img.logo-fci {
+        width: 110px;
+        margin-right: 50px;
+    }
+
+    footer .logos-organizadores img.logo-imago {
+        width: 60px;
+    }
+
+    footer .logo-colaborador {
+        justify-content: flex-start;
+        margin-top: 50px;
+    }
+
+    footer .logo-colaborador img {
+        width: 150px;
+    }
+}
+
+
+@media(max-width:768px) {
+    .informacion-emergentes h2 {
+        text-align: center;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        line-height: 30px;
+        padding: 0 30px;
+    }
+
+    .informacion-emergentes h2.texto-desktop {
+        display: none;
+    }
+
+    .informacion-emergentes h2.texto-movil {
+        display: block;
+    }
+
+    .portada .logo-emergentes {
+        width: 350px;
+    }
+
+    .informacion-emergentes .btn-box a {
+        padding: 8px 30px;
+        font-size: 1em;
+    }
+
+    .informacion-emergentes .fecha {
+        flex-direction: row;
+    }
+
+    .informacion-emergentes .fecha .mes p {
+        font-size: 1.7em;
+        padding-right: 30px;
+    }
+
+    .informacion-emergentes .fecha .fechas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informacion-emergentes .fecha .fechas .numeros img {
+        width: 30px;
+        height: auto;
+        align-self: center;
+        margin-right: 0px;
+    }
+
+    .informacion-emergentes .fecha .fechas .numeros p {
+        font-size: 1.3em;
+    }
+
+    .informacion-emergentes .fecha .fechas .numeros p span {
+        border-left: 4px #00C853 solid;
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    footer .logos-organizadores img.logo-colunga {
+        width: 50px;
+        margin-right: 50px;
+    }
+
+    footer .logos-organizadores img.logo-fci {
+        width: 110px;
+        margin-right: 50px;
+    }
+
+    footer .logos-organizadores img.logo-imago {
+        width: 60px;
+    }
+
+    footer .logo-colaborador {
+        justify-content: flex-start;
+        margin-top: 50px;
+    }
+
+    footer .logo-colaborador img {
+        width: 150px;
+    }
+}
+
+
+
+@media(max-width:500px) {
+    .portada .logo-emergentes {
+        width: 300px;
+    }
+
+    .informacion-emergentes h2 {
+        text-align: center;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        line-height: 30px;
+        padding: 0 20px;
+    }
+
+    .informacion-emergentes .fecha {
+        flex-direction: column;
+
+    }
+
+    .informacion-emergentes .fecha .mes p {
+        font-size: 2em;
+        padding-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .informacion-emergentes .fecha .fechas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informacion-emergentes .fecha .fechas .numeros img {
+        width: 30px;
+        height: auto;
+        align-self: center;
+        margin-right: 5px;
+    }
+
+    .informacion-emergentes .fecha .fechas .numeros p {
+        font-size: 1.5em;
+    }
+
+    .informacion-emergentes .fecha .fechas .numeros p span {
+        padding-left: 15px;
+        margin-left: 15px;
+    }
+
+    footer p {
+        font-size: 1em;
+        padding-right: 0px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    footer .logos-organizadores {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    footer .logos-organizadores img.logo-colunga {
+        width: 50px;
+        margin-right: 50px;
+    }
+
+    footer .logos-organizadores img.logo-fci {
+        width: 110px;
+        margin-right: 50px;
+    }
+
+    footer .logos-organizadores img.logo-imago {
+        width: 60px;
+    }
+
+    footer .logo-colaborador {
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    footer .logo-colaborador img {
+        width: 150px;
+    }
+}
+
+@media(max-width:400px) {
+    .portada .logo-emergentes {
+        width: 250px;
+    }
+
+    footer p {
+        font-size: 1em;
+        padding-right: 0px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    footer .logos-organizadores img.logo-colunga {
+        width: 40px;
+        margin-right: 30px;
+    }
+
+    footer .logos-organizadores img.logo-fci {
+        width: 90px;
+        margin-right: 30px;
+    }
+
+    footer .logos-organizadores img.logo-imago {
+        width: 50px;
+    }
+
+    footer .logo-colaborador {
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    footer .logo-colaborador img {
+        width: 140px;
+    }
+}
+
+
+@media(max-width:350px) {
+    .portada .logo-emergentes {
+        width: 220px;
+    }
+
+    .informacion-emergentes .fecha .fechas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informacion-emergentes .fecha .fechas .numeros img {
+        margin-right: 0px;
+    }
+
+    .informacion-emergentes .fecha .mes p {
+        font-size: 1.6em;
+    }
+
+    .informacion-emergentes .fecha .fechas .numeros p {
+        font-size: 1.3em;
+    }
+
+    .informacion-emergentes .fecha .fechas .numeros p span {
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+
+}
