@@ -1,485 +1,833 @@
 body {
     font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/bg-body.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+
 }
+
+/*Header*/
+
+header {
+    position: fixed;
+    width: 100% !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    z-index: 99999;
+}
+
+header nav {
+    background: white;
+    height: 90px;
+}
+
+header .navbar-brand {
+    display: none !important;
+}
+
+header .logo-desktop {
+    display: block !important;
+}
+
+
+header ul {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-right: 40px;
+}
+
+header ul img.logo-emergentes {
+    margin-top: 30px;
+    width: 180px;
+}
+
+header a {
+    color: black !important;
+    font-size: 0.9em;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 0px 20px !important;
+    margin: 0px;
+    letter-spacing: 1px;
+}
+
+header .item-violeta a:hover {
+    color: #BF43D4 !important;
+    transition: 0.5s all;
+}
+
+header .item-celeste a:hover {
+    color: #33C0FF !important;
+    transition: 0.5s all;
+}
+
+header .item-amarillo a:hover {
+    color: #FFD700 !important;
+    transition: 0.5s all;
+}
+
+header .item-verde a:hover {
+    color: #00C853 !important;
+    transition: 0.5s all;
+}
+
+header .navbar-brand {
+    margin-right: 0px;
+}
+
+/*Portada*/
 
 .portada {
-    background-image: url(../img/texture-white-ruido.png);
+    padding-top: 130px;
+    background-image: url(../img/bg-portada.jpg);
     background-size: cover;
+    background-position: bottom center;
     background-repeat: no-repeat;
-    background-position: center;
-    padding: 0px;
-    margin: 0px;
-    height: 60vh;
+}
+
+.portada .contenido {
+    width: 80%;
+    margin: auto;
+}
+
+.portada .contenido .titulo-portada {
+    width: 90%;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    margin: auto;
+    padding-top: 5px;
+    position: relative;
+    top: 50px;
 }
 
-.portada .logo-emergentes {
-    width: 380px;
+.portada .collage {
+    position: relative;
+    top: 100px;
+    width: 100%;
 }
 
-h2,
-p,
-a {
-    font-family: 'Source Code Pro', monospace;
+.portada .collage-portada {
+    display: flex;
+    margin: auto;
+    width: 80%;
 }
 
-.informacion-emergentes {
-    margin-top: 80px;
-    margin-bottom: 80px;
+.portada .titulo-portada {
+    display: block !important;
 }
 
-.informacion-emergentes h2 {
+.portada .titulo-portada-movil {
+    display: none !important;
+}
+
+.portada .collage-portada {
+    display: block !important;
+}
+
+.portada .collage-portada-movil {
+    display: none !important;
+}
+
+
+/*Titulos*/
+
+h2.titulo-seccion {
     text-align: center;
-    font-size: 1.4em;
-    text-transform: uppercase;
-    line-height: 35px;
-}
-
-.informacion-emergentes h2.texto-desktop {
-    display: block;
-}
-
-.informacion-emergentes h2.texto-movil {
-    display: none;
-}
-
-.informacion-emergentes h2 span {
-    border-bottom: 6px #00C853 solid;
-    font-weight: bold;
-}
-
-
-.informacion-emergentes .btn-box {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.informacion-emergentes .btn-box a {
-    padding: 8px 40px;
-    background: black;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-size: 2.2em;
+    font-weight: 800;
     letter-spacing: 2px;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: 0.5s all;
-    font-size: 1.2em;
-}
-
-.informacion-emergentes .btn-box a:hover {
-    background: #BF43D4;
-}
-
-.informacion-emergentes .fecha {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
+    color: black;
     margin-bottom: 30px;
 }
 
-.informacion-emergentes .fecha .mes p {
-    color: black;
-    font-size: 2.2em;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 0px;
-    padding-right: 50px;
+h2.titulo-seccion img {
+    width: 60px;
 }
 
-.informacion-emergentes .fecha .fechas {
+
+/*Nuestros desafios*/
+
+.nuestros-desafios {
+    margin-top: 200px;
+}
+
+.nuestros-desafios .fila-box .gradiente {
+    background: linear-gradient(90deg, rgba(0, 200, 83, 1) 0%, rgba(0, 212, 255, 1) 50%, rgba(191, 67, 212, 1) 100%);
+    height: 10px;
+    width: 100%;
+}
+
+.nuestros-desafios .box {
+    padding: 100px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s all;
+}
+
+.nuestros-desafios .box-violeta {
+    background: url(../img/bg-violeta-30.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nuestros-desafios .box-violeta:hover {
+    background: url(../img/bg-violeta-100.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nuestros-desafios .box-celeste {
+    background: url(../img/bg-celeste-30.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nuestros-desafios .box-celeste:hover {
+    background: url(../img/bg-celeste-100.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nuestros-desafios .box-amarillo {
+    background: url(../img/bg-amarillo-30.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nuestros-desafios .box-amarillo:hover {
+    background: url(../img/bg-amarillo-100.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.nuestros-desafios .box-verde {
+    background: url(../img/bg-verde-30.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nuestros-desafios .box-verde:hover {
+    background: url(../img/bg-verde-100.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.nuestros-desafios .box h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.nuestros-desafios .box p {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 0px;
+}
+
+/*Que es*/
+
+.que-es {
+    margin: 100px 0px;
+}
+
+.que-es a {
+    color: #BF43D4;
+    font-weight: 800;
+    transition: 0.5s all;
+}
+
+.que-es a:hover {
+    color: #00C853;
+}
+
+.que-es .img {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.que-es .img-verde {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.que-es .img-violeta {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.que-es img.collage-que-es-violeta {
+    width: 80%;
+}
+
+.que-es img.collage-que-es-verde {
+    width: 80%;
+}
+
+.que-es .contenido {
     display: flex;
     flex-direction: column;
 }
 
-.informacion-emergentes .fecha .fechas .numeros {
+.que-es p {
+    text-align: center;
+    font-size: 1em;
+    color: black;
+}
+
+.que-es .row div {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+
+/* Otto */
+
+.invitado-otto-scharmer {
+    background-image: url(../img/bg-celeste-otto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    z-index: 999;
+    padding: 0px;
+}
+
+.invitado-otto-scharmer .img-otto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.invitado-otto-scharmer .img-otto img {
+    width: 100%;
+}
+
+.invitado-otto-scharmer .contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 30px;
+}
+
+.invitado-otto-scharmer .contenido .destacado {
+    background: #FFD700;
+    color: black;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    padding: 2px 5px;
+}
+
+.invitado-otto-scharmer .contenido a {
+    text-decoration: none;
+    color: black;
+}
+
+.invitado-otto-scharmer .contenido a h3 {
+    font-size: 3em;
+    color: black;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+
+.invitado-otto-scharmer .contenido p {
+    color: black;
+    font-size: 1em;
+    padding-right: 10%;
+}
+
+
+.franja-violeta {
+    height: 300px;
+    background: linear-gradient(90deg, rgba(0, 200, 83, 1) 0%, rgba(0, 212, 255, 1) 50%, rgba(191, 67, 212, 1) 100%);
+    position: relative;
+    bottom: 200px;
+    z-index: -1;
+}
+
+/*Invitados*/
+.invitados-charlas-digitales .invitado {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.invitados-charlas-digitales .invitado img {
+    width: 80%;
+    margin: auto;
+
+}
+
+.invitados-charlas-digitales h4 {
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding-top: 30px;
+    margin-bottom: 5px;
+}
+
+
+.invitados-charlas-digitales p {
+    margin-bottom: 0px;
+    background: #00C853;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 2px 10px;
+}
+
+
+/*Agenda*/
+
+.agenda {
+    margin: 0px auto;
+    position: relative;
+    bottom: 80px;
+}
+
+.agenda h2 {
+    margin-bottom: 0px;
+}
+
+.agenda p.sub-titulo {
+    text-align: center;
+    color: #BF43D4;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.agenda .nav-tabs ul {
+    width: 100% !important;
+    background: black;
+}
+
+
+.agenda .nav-tabs li {
+    width: 24.87% !important;
+    border: 0px !important;
+    margin-right: 0.15%;
+}
+
+.agenda .nav-tabs li button {
+    width: 100% !important;
+    background: black;
+    border: 0px !important;
+    overflow: hidden;
+    color: white !important;
+    font-weight: bold;
+}
+
+.agenda .nav-tabs li:first-child {
+    margin-left: 0px;
+}
+
+.agenda .nav-tabs li:last-child {
+    margin-right: 0px;
+}
+
+.agenda .nav-tabs li button.active {
+    background: #00C853 !important;
+}
+
+.agenda .tab-content img {
+    width: 100%;
+}
+
+
+/*Colaboradores*/
+
+.colaboradores {
+    margin: 100px auto;
+}
+
+.colaboradores h2 {
+    margin-bottom: 40px;
+}
+
+.colaboradores .org {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.colaboradores .org img {
+    margin-bottom: 20px;
+}
+
+.colaboradores .org .logo-org-colunga {
+    width: 100px;
+}
+
+.colaboradores .org .logo-org-fci {
+    width: 200px;
+}
+
+.colaboradores .org .logo-org-imago {
+    width: 100px;
+}
+
+.colaboradores .org p {
+    padding: 0px 30px;
+}
+
+.colaboradores .apoyo {
     display: flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
-    margin-bottom: 10px;
+    justify-content: center;
 }
 
-.informacion-emergentes .fecha .fechas .numeros:last-child {
-    margin-bottom: 0px;
+.colaboradores .apoyo {
+    margin: 80px auto;
 }
 
-.informacion-emergentes .fecha .fechas .numeros img {
-    width: 30px;
-    height: auto;
-    align-self: center;
-    margin-right: 5px;
-}
-
-.informacion-emergentes .fecha .fechas .numeros p {
-    margin-bottom: 0px;
-    font-size: 1.7em;
+.colaboradores .apoyo p {
+    color: black;
+    font-size: 1.4em;
     font-weight: 800;
-}
-
-.informacion-emergentes .fecha .fechas .numeros p span {
-    border-left: 4px #00C853 solid;
-    padding-left: 15px;
-    margin-left: 15px;
-}
-
-
-footer {
-    background: black;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-footer p {
-    color: white;
-    padding-right: 30px;
-    font-size: 1.1em;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    padding-right: 20px;
     margin-bottom: 0px;
 }
 
-footer .logos-organizadores {
+.colaboradores .apoyo .logo-institute {
+    width: 240px;
+}
+
+
+.colaboradores .colaboran {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    align-content: center;
+    justify-content: center;
 }
 
-footer .logos-organizadores img {
-    align-self: center;
+.colaboradores .colaboran p {
+    color: black;
+    font-size: 1.4em;
+    font-weight: 800;
+    padding-right: 30px;
+    margin-bottom: 0px;
 }
 
-footer .logos-organizadores img.logo-colunga {
-    width: 70px;
-    margin-right: 60px;
+.colaboradores .colaboran img {
+    margin-right: 30px;
 }
 
-footer .logos-organizadores img.logo-fci {
-    width: 160px;
-    margin-right: 60px;
+.colaboradores .colaboran .logo-plastic-oceans {
+    width: 180px;
 }
 
-footer .logos-organizadores img.logo-imago {
-    width: 90px;
-}
-
-footer .logo-colaborador {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-footer .logo-colaborador img {
+.colaboradores .colaboran .logo-fundacion-mapocho {
     width: 200px;
 }
 
+.colaboradores .colaboran .logo-techo {
+    width: 160px;
+}
 
-@media(max-width:1300px) {
-    .portada .logo-emergentes {
-        width: 350px;
-    }
+footer {
+    background: url(../img/bg-footer.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    padding-top: 40px;
+}
 
-    footer p {
-        font-size: 1em;
-    }
+footer .row {
+    display: flex;
+    justify-content: center
+}
 
-    footer .logos-organizadores img.logo-colunga {
-        width: 60px;
-        margin-right: 50px;
-    }
+footer img {
+    width: 300px !important;
+    margin-bottom: 40px;
+}
 
-    footer .logos-organizadores img.logo-fci {
-        width: 140px;
-        margin-right: 50px;
-    }
+footer .linea-decoracion {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 200, 83, 1) 0%, rgba(0, 212, 255, 1) 50%, rgba(191, 67, 212, 1) 100%);
+    height: 8px;
+}
 
-    footer .logos-organizadores img.logo-imago {
-        width: 70px;
-    }
-
-    footer .logo-colaborador img {
-        width: 170px;
+@media(max-width:1200px) {
+    h2.titulo-seccion {
+        font-size: 1.8em;
     }
 }
 
-
-@media(max-width:991px) {
-    .portada .logo-emergentes {
-        width: 350px;
+@media(max-width:960px) {
+    header ul {
+        padding-right: 0px;
     }
 
-    footer p {
-        font-size: 1em;
+    .portada .contenido .titulo-portada {
+        width: 100%;
     }
 
-    footer .logos-organizadores img.logo-colunga {
-        width: 50px;
-        margin-right: 50px;
+    .portada .collage-portada {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
     }
 
-    footer .logos-organizadores img.logo-fci {
-        width: 110px;
-        margin-right: 50px;
+    .portada .row {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
     }
 
-    footer .logos-organizadores img.logo-imago {
-        width: 60px;
+    .portada .collage img {
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+@media(max-width:900px) {
+    header ul a {
+        font-size: 0.9em;
     }
 
-    footer .logo-colaborador {
-        justify-content: flex-start;
-        margin-top: 50px;
+    h2.titulo-seccion {
+        font-size: 1.6em;
     }
+}
 
-    footer .logo-colaborador img {
+@media(max-width:840px) {
+    header ul img.logo-emergentes {
+        margin-top: 30px;
         width: 150px;
     }
 }
 
-
 @media(max-width:768px) {
-    .informacion-emergentes h2 {
-        text-align: center;
-        font-size: 1.3em;
-        text-transform: uppercase;
-        line-height: 30px;
-        padding: 0 30px;
+    header .logo-emergentes-movil {
+        width: 160px !important;
     }
 
-    .informacion-emergentes h2.texto-desktop {
+    header .navbar-brand {
+        display: block !important;
+    }
+
+    .logo-desktop {
+        display: none !important;
+    }
+
+    header img {
+        width: 160px !important;
+    }
+
+
+    button.navbar-toggler {
+        margin-bottom: 30px;
+        border: none;
+    }
+
+    .navbar-collapse {
+        background: white;
+        margin-top: 10px;
+    }
+
+    .navbar-collapse ul {
+        padding: 70px 20px;
+    }
+
+    .navbar-collapse ul .nav-link {
+        padding: 10px 0px !important;
+    }
+
+    .portada .titulo-portada {
+        display: none !important;
+    }
+
+    .portada .titulo-portada-movil {
+        display: block !important;
+        width: 100%;
+        margin-top: 80px;
+        margin-bottom: 0px;
+    }
+
+    .portada .collage {
+        position: relative;
+        top: 50px;
+        width: 100%;
+    }
+
+    .portada .collage-portada {
+        display: none !important;
+    }
+
+    .portada .collage-portada-movil {
+        display: block !important;
+        width: 80%;
+        margin: auto !important;
+    }
+
+    .colaboradores .colaboran {
+        flex-wrap: wrap;
+    }
+
+    .que-es img.collage-que-es-verde {
         display: none;
     }
 
-    .informacion-emergentes h2.texto-movil {
-        display: block;
+    .que-es img.collage-que-es-violeta {
+        display: none;
     }
 
-    .portada .logo-emergentes {
-        width: 350px;
-    }
-
-    .informacion-emergentes .btn-box a {
-        padding: 8px 30px;
-        font-size: 1em;
-    }
-
-    .informacion-emergentes .fecha {
-        flex-direction: row;
-    }
-
-    .informacion-emergentes .fecha .mes p {
-        font-size: 1.7em;
-        padding-right: 30px;
-    }
-
-    .informacion-emergentes .fecha .fechas {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .informacion-emergentes .fecha .fechas .numeros img {
-        width: 30px;
-        height: auto;
-        align-self: center;
-        margin-right: 0px;
-    }
-
-    .informacion-emergentes .fecha .fechas .numeros p {
-        font-size: 1.3em;
-    }
-
-    .informacion-emergentes .fecha .fechas .numeros p span {
-        border-left: 4px #00C853 solid;
-        padding-left: 10px;
-        margin-left: 10px;
-    }
-
-    footer p {
-        font-size: 1em;
-    }
-
-    footer .logos-organizadores img.logo-colunga {
-        width: 50px;
-        margin-right: 50px;
-    }
-
-    footer .logos-organizadores img.logo-fci {
-        width: 110px;
-        margin-right: 50px;
-    }
-
-    footer .logos-organizadores img.logo-imago {
-        width: 60px;
-    }
-
-    footer .logo-colaborador {
-        justify-content: flex-start;
-        margin-top: 50px;
-    }
-
-    footer .logo-colaborador img {
-        width: 150px;
-    }
-}
-
-
-
-@media(max-width:500px) {
-    .portada .logo-emergentes {
-        width: 300px;
-    }
-
-    .informacion-emergentes h2 {
+    .invitado-otto-scharmer .contenido .destacado {
+        width: 100%;
         text-align: center;
-        font-size: 1.2em;
-        text-transform: uppercase;
-        line-height: 30px;
-        padding: 0 20px;
+        padding: 0px;
     }
 
-    .informacion-emergentes .fecha {
-        flex-direction: column;
-
-    }
-
-    .informacion-emergentes .fecha .mes p {
-        font-size: 2em;
-        padding-right: 0px;
-        margin-bottom: 20px;
-    }
-
-    .informacion-emergentes .fecha .fechas {
+    .invitado-otto-scharmer .contenido {
         display: flex;
-        flex-direction: column;
-    }
-
-    .informacion-emergentes .fecha .fechas .numeros img {
-        width: 30px;
-        height: auto;
-        align-self: center;
-        margin-right: 5px;
-    }
-
-    .informacion-emergentes .fecha .fechas .numeros p {
-        font-size: 1.5em;
-    }
-
-    .informacion-emergentes .fecha .fechas .numeros p span {
-        padding-left: 15px;
-        margin-left: 15px;
-    }
-
-    footer p {
-        font-size: 1em;
-        padding-right: 0px;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    footer .logos-organizadores {
-        display: flex;
-        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        justify-content: flex-start;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .invitado-otto-scharmer .contenido p {
+        text-align: center;
+        padding: 30px 30px 60px 30px;
+    }
+
+    .invitados-charlas-digitales .invitado {
+        margin-bottom: 50px;
+    }
+
+    .invitados-charlas-digitales .invitado img {
+        width: 60%;
+        margin: auto;
+    }
+
+    .colaboradores .colaboran img {
+        margin: 30px;
+    }
+
+    .colaboradores .org {
+        margin-bottom: 30px;
+    }
+
+    .colaboradores .org .logo-org-colunga {
+        width: 80px;
+    }
+
+    .colaboradores .org .logo-org-fci {
+        width: 170px;
+    }
+
+    .colaboradores .org .logo-org-imago {
+        width: 80px;
+    }
+
+    .colaboradores .apoyo {
         flex-wrap: wrap;
     }
 
-    footer .logos-organizadores img.logo-colunga {
-        width: 50px;
-        margin-right: 50px;
+    .colaboradores .apoyo img {
+        margin: 10px 0px;
     }
 
-    footer .logos-organizadores img.logo-fci {
-        width: 110px;
-        margin-right: 50px;
+    .colaboradores .apoyo img {
+        width: 170px !important;
     }
 
-    footer .logos-organizadores img.logo-imago {
-        width: 60px;
-    }
-
-    footer .logo-colaborador {
-        flex-wrap: wrap;
-        margin-top: 50px;
-    }
-
-    footer .logo-colaborador img {
-        width: 150px;
-    }
-}
-
-@media(max-width:400px) {
-    .portada .logo-emergentes {
-        width: 250px;
-    }
-
-    footer p {
-        font-size: 1em;
-        padding-right: 0px;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    footer .logos-organizadores img.logo-colunga {
-        width: 40px;
-        margin-right: 30px;
-    }
-
-    footer .logos-organizadores img.logo-fci {
-        width: 90px;
-        margin-right: 30px;
-    }
-
-    footer .logos-organizadores img.logo-imago {
-        width: 50px;
-    }
-
-    footer .logo-colaborador {
-        flex-wrap: wrap;
-        margin-top: 40px;
-    }
-
-    footer .logo-colaborador img {
+    .colaboradores .colaboran .logo-plastic-oceans {
         width: 140px;
     }
+
+    .colaboradores .colaboran .logo-fundacion-mapocho {
+        width: 170px;
+    }
+
+    .colaboradores .colaboran .logo-techo {
+        width: 120px;
+    }
+
+    footer img {
+        width: 200px !important;
+    }
+
+    header .logo-desktop {
+        display: none !important;
+    }
+}
+
+@media(max-width:500px) {
+    header .logo-desktop {
+        display: none !important;
+    }
+
+    header img {
+        width: 150px !important;
+    }
+
+    header nav {
+        background: white;
+        height: 70px;
+    }
+
+    button.navbar-toggler {
+        margin-bottom: 50px;
+        border: none;
+    }
+
+    h2.titulo-seccion {
+        font-size: 1.2em;
+    }
+
+    h2.titulo-seccion img {
+        width: 30px;
+    }
+
+    .que-es p {
+        font-size: 0.9em;
+    }
+
+    .colaboradores .org p {
+        font-size: 0.9em;
+    }
+
 }
 
 
-@media(max-width:350px) {
-    .portada .logo-emergentes {
-        width: 220px;
+@media(max-width:400px) {
+    header .logo-desktop {
+        display: none !important;
     }
 
-    .informacion-emergentes .fecha .fechas {
-        display: flex;
-        flex-direction: column;
+    header img {
+        width: 130px !important;
     }
-
-    .informacion-emergentes .fecha .fechas .numeros img {
-        margin-right: 0px;
-    }
-
-    .informacion-emergentes .fecha .mes p {
-        font-size: 1.6em;
-    }
-
-    .informacion-emergentes .fecha .fechas .numeros p {
-        font-size: 1.3em;
-    }
-
-    .informacion-emergentes .fecha .fechas .numeros p span {
-        padding-left: 10px;
-        margin-left: 10px;
-    }
-
 }

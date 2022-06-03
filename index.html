@@ -1,75 +1,270 @@
 <!doctype html>
 <html lang="es">
-  <head>
+
+<head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Emergentes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <!-- Hoja de estilos Emergentes -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Emergentes</title>
+
+    <link rel="shortcut icon" href="img/favicon-emergentes.ico" />
+
+    <!-- Hoja de estilos -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <div class="container-fluid portada">
-        <img src="img/logo-emergentes.svg" alt="logo-emergentes" class="logo-emergentes">
-    </div>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/logo-header-desktop.svg" alt="logo emergentes" class="logo-emergentes"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item item-violeta">
+                            <a class="nav-link" href="#nuestros-desafios">Nuestros Desafios</a>
+                        </li>
+                        <li class="nav-item item-celeste">
+                            <a class="nav-link" href="#que-es">¿Qué es?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="logo-desktop" href="#"><img src="img/logo-header-desktop.svg" alt="logo emergentes" class="logo-emergentes"></a>
+                        </li>
+                        <li class="nav-item item-amarillo">
+                            <a class="nav-link" href="#invitados">Invitados/as</a>
+                        </li>
+                        <li class="nav-item item-verde">
+                            <a class="nav-link" href="#agenda">Agenda 2022</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <div class="container informacion-emergentes">
+    <section class="portada container-fluid">
+        <div class="row contenido">
+            <div class="col-12">
+                <img src="img/titulo-portada-emergente-desktop.svg" alt="titulo portada" class="titulo-portada">
+                <img src="img/titulo-portada-movil.svg" alt="titulo portada" class="titulo-portada-movil">
+            </div>
+        </div>
+        <div class="row collage">
+            <div class="col-12">
+                <img src="img/collage-portada.png" alt="collage portada" class="collage-portada">
+                <img src="img/collage-portada-movil.png" alt="collage portada" class="collage-portada-movil">
+            </div>
+        </div>
+        <div class="ancla" id="nuestros-desafios"></div>
+    </section>
+
+    <section class="container-fluid nuestros-desafios">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="titulo-seccion"><img src="img/arrow-violeta-left.svg" alt="flecha" class="flecha-titulo" />Nuestros desafios<img src="img/arrow-violeta-right.svg" alt="flecha" class="flecha-titulo" /></h2>
+            </div>
+        </div>
+        <div class="row fila-box">
+            <div class="col-12 gradiente">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 box box-celeste">
+                <h3>Infancia</h3>
+                <p>"Crecer en un mundo incierto"</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 box box-violeta">
+                <h3>Ciudad y Territorio</h3>
+                <p>“Habitar los espacios”</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 box box-amarillo">
+                <h3>Participación y Democracia</h3>
+                <p>“El nuevo poder”</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 box box-verde">
+                <h3>Medio ambiente</h3>
+                <p>“Acción climática”</p>
+            </div>
+            <div class="col-12 gradiente">
+            </div>
+        </div>
+        <div class="ancla" id="que-es"></div>
+    </section>
+
+    <section class="container-fluid que-es">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-3 img img-verde">
+                <img src="img/img-que-es-verde.png" alt="collage que es" class="collage-que-es-verde" />
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 contenido">
+                <h2 class="titulo-seccion"><img src="img/arrow-celeste-left.svg" alt="flecha" class="flecha-titulo" />¿Qué es Emergentes?<img src="img/arrow-celeste-right.svg" alt="flecha" class="flecha-titulo" /></h2>
+                <p>Chile requiere cambios urgentes y necesitamos nuevos líderes y lideresas capaces de representar los intereses de la ciudadanía, actuar articuladamente e influir en los espacios de toma de decisión, para que estos cambios ocurran.</p>
+                <p>EMERGENTES surge como respuesta a este escenario, siendo un programa de formación en innovación y liderazgo, que busca articular y fortalecer a los agentes de cambio de la sociedad civil, para potenciar sus capacidades de trabajar de manera colaborativa e incidir en la transformación social.</p>
+                <p>Este programa de formación contempla encuentros presenciales y virtuales con líderes que están aportando al cambio social, con la participación especial de <a href="#">Otto Scharmer</a>, Mónica Meltis, Alfredo Zamudio y Marcelle Decothe, expertos en innovación social e incidencia. </p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 img img-violeta">
+                <img src="img/img-que-es-violeta.png" alt="collage que es" class="collage-que-es-violeta" />
+            </div>
+        </div>
+        <div class="ancla" id="invitados"></div>
+    </section>
+
+
+    <section class="container invitado-otto-scharmer">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-5 img-otto">
+                <img src="img/otto-img.png" alt="img otto scharmer" class="img-otto" />
+            </div>
+            <div class="col-12 col-sm-12 col-md-7 contenido">
+                <p class="destacado">Invitado Internacional</p>
+                <a href="#">
+                    <h3>Otto Scharmer</h3>
+                </a>
+                <p>Otto Scharmer es un autor e investigador de acción que co-crea caminos de transformación para personas, instituciones y sistemas. Es experto en innovación y liderazgo, profesor en MIT y Presencing Institute. Sus metodologías de cambio sistémico se aplican en organizaciones empresariales, gubernamentales y de la sociedad civil de todo el mundo.</p>
+            </div>
+        </div>
+    </section>
+    <div class="ancla" id="agenda"></div>
+    <div class="franja-violeta"></div>
+
+   <!-- <section class="container invitados-charlas-digitales">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="titulo-seccion"><img src="img/arrow-amarillo-left.svg" alt="flecha" class="flecha-titulo" />Invitados/as para charlas digitales<img src="img/arrow-amarillo-right.svg" alt="flecha" class="flecha-titulo" /></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 invitado">
+               <div class="img-invitado-borde"></div>
+                <img src="img/img-invitado-prototipo.png" alt="img invitado" class="img-invitado" />
+                <h4>Mónica Meltis</h4>
+                <p class="texto-destacado">Organizador</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 invitado">
+               <div class="img-invitado-borde"></div>
+                <img src="img/img-invitado-prototipo.png" alt="img invitado" class="img-invitado" />
+                <h4>Alfredo Zamudio</h4>
+                <p class="texto-destacado">Organizador</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 invitado">
+               <div class="img-invitado-borde"></div>
+                <img src="img/img-invitado-prototipo.png" alt="img invitado" class="img-invitado" />
+                <h4>Pablo Pascale</h4>
+                <p class="texto-destacado">Organizador</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 invitado">
+               <div class="img-invitado-borde"></div>
+                <img src="img/img-invitado-prototipo.png" alt="img invitado" class="img-invitado" />
+                <h4>Macelle Decothe</h4>
+                <p class="texto-destacado">Organizador</p>
+            </div>
+        </div>
+        <div class="ancla" id="agenda"></div>
+    </section> -->
+
+
+    <section class="container agenda">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="titulo-seccion"><img src="img/arrow-verde-left.svg" alt="flecha" class="flecha-titulo" />Agenda emergentes 2022<img src="img/arrow-verde-right.svg" alt="flecha" class="flecha-titulo" /></h2>
+                <p class="sub-titulo">Encuentros presenciales y virtuales</p>
+            </div>
+        </div>
         <div class="row justify-content-center">
-            <div class="col-12 col-sm-12 col-md-12">
-                <h2 class="texto-desktop">
-                    Encuentro de formación en <span>innovación y liderazgo</span><br> para nuevas voces del cambio social
-                </h2>
-
-                <h2 class="texto-movil">
-                    Encuentro de formación en <span>innovación y liderazgo</span> para nuevas voces del cambio social
-                </h2>
-            </div>
-            <div class="col-12 col-sm-12 col-md-12 btn-box">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOcIDVHzBNQuOis-T19qsmL1HhAD9rjM0dQupPsFMxPdBp0A/viewform" class="btn-emergentes" target="_blank">Postula aquí</a>
-            </div>
-            <div class="col-12 col-sm-12 col-md-12 fecha">
-                <div class="mes">
-                    <p>Junio 2022</p>
-                </div>
-                <div class="fechas">
-                    <div class="numeros"><img src="img/arrow-icon.svg" alt="icon-arrow" class="icon-arrow">
-                        <p>15 y 16<span>Presencial</span></p>
+            <div class="col-12 col-sm-12 col-md-10 col-lg-8">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="dia-1-tab" data-bs-toggle="tab" data-bs-target="#dia-1" type="button" role="tab" aria-controls="home" aria-selected="true">Día 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="dia-2-tab" data-bs-toggle="tab" data-bs-target="#dia-2" type="button" role="tab" aria-controls="profile" aria-selected="false">Día 2</button>
+                    </li>
+                  <!--  <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="dia-3-tab" data-bs-toggle="tab" data-bs-target="#dia-3" type="button" role="tab" aria-controls="contact" aria-selected="false">Día 3</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="dia-4-tab" data-bs-toggle="tab" data-bs-target="#dia-4" type="button" role="tab" aria-controls="contact" aria-selected="false">Día 4</button>
+                    </li>-->
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="dia-1" role="tabpanel" aria-labelledby="home-tab">
+                        <img src="img/dia-1-cronograma.svg" alt="cronograma dia 1" class="cronograma-dia">
                     </div>
-                    <div class="numeros"><img src="img/arrow-icon.svg" alt="icon-arrow" class="icon-arrow">
-                        <p>22 y 29<span>Digital</span></p>
+                    <div class="tab-pane fade" id="dia-2" role="tabpanel" aria-labelledby="profile-tab">
+                        <img src="img/cronograma-dia-2.svg" alt="cronograma dia 2" class="cronograma-dia">
                     </div>
+                    <!--<div class="tab-pane fade" id="dia-3" role="tabpanel" aria-labelledby="contact-tab">
+                        <img src="img/dia-1-cronograma.svg" alt="cronograma dia 1" class="cronograma-dia">
+                    </div>
+                    <div class="tab-pane fade" id="dia-4" role="tabpanel" aria-labelledby="contact-tab">
+                        <img src="img/dia-1-cronograma.svg" alt="cronograma dia 1" class="cronograma-dia">
+                    </div>-->
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
+    <section class="container colaboradores">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="titulo-seccion"><img src="img/arrow-verde-left.svg" alt="flecha" class="flecha-titulo" />Una iniciativa de<img src="img/arrow-verde-right.svg" alt="flecha" class="flecha-titulo" /></h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 org">
+                <a href="#"><img src="img/logo-colunga.png" alt="logo colunga" class="logo-org-colunga"></a>
+                <p>Fundación Colunga contribuye a la superación de la pobreza y vulnerabilidad en la que viven niñas, niños y adolescentes (NNA) en Chile, realizando inversión social estratégica en proyectos que aporten a la construcción de una sociedad más justa, consciente y colaborativa.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 org">
+                <a href="#"><img src="img/logo-fci.png" alt="logo ciudadania inteligente" class="logo-org-fci"></a>
+                <p>Ciudadanía Inteligente es una organización latinoamericana inclusiva y feminista que lucha por la justicia social y la transformación de las democracias. Sin fines de lucro y apartidista. Buscamos fortalecer las democracias de Latinoamérica mediante el uso innovador de tecnologías.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 org">
+                <a href="#"><img src="img/logo-imago.png" alt="logo Imago" class="logo-org-imago"></a>
+                <p>IMAGO Global Grassroots tiene la misión de ayudar a organizaciones sociales a escalar el impacto de sus soluciones a través de enfoques participativos y centrados en el ser humano. Imago es la última etapa de crecimiento de un insecto cuando alcanza la madurez y encuentra sus alas. </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-8 apoyo">
+                <p>Con el apoyo de:</p>
+                <img src="img/logo-institute.png" alt="logo institute" class="logo-institute">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-8 colaboran">
+                <p>Colaboran:</p>
+                <img src="img/logo-plastic-oceans.png" alt="logo plastic oceans" class="logo-plastic-oceans">
+                <img src="img/logo-fundacion-mapocho.png" alt="logo fundacion mapocho" class="logo-fundacion-mapocho">
+                <img src="img/logo-techo.png" alt="logo techo" class="logo-techo">
+            </div>
+        </div>
+    </section>
+    
     <footer class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-8 logos-organizadores">
-                    <p>Organizan</p>
-                    <a href="https://www.fundacioncolunga.org"><img src="img/logo-colunga.png" alt="logo colunga" class="logo-colunga"></a>
-                    <a href="https://ciudadaniai.org"><img src="img/logo-fci.png" alt="logo fci" class="logo-fci"></a>
-                    <a href="https://imagogg.org"><img src="img/logo-imago.png" alt="logo imago" class="logo-imago"></a>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4 logo-colaborador">
-                    <p>Colaboran</p>
-                    <a href="https://www.presencing.org"><img src="img/logo-presencing-institute.png" alt="logo presencing institute" class="logo-presencing-institute"></a>
-                </div>
-            </div>
-        </div>
-
+       <div class="row">
+           <img src="img/logo-emergentes.svg" alt="logo emergentes" class="logo-emergentes-footer">
+       </div>
+       <div class="linea-decoracion"></div>
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
 </body></html>
