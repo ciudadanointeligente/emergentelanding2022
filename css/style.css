@@ -460,6 +460,19 @@ h2.titulo-seccion img {
     width: 100%;
 }
 
+.agenda  .tab-pane .fecha{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin: 40px 0px 0px 0px;
+}
+
+.agenda  .tab-pane p{
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
 
 /*Colaboradores*/
 
