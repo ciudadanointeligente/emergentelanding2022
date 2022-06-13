@@ -369,15 +369,18 @@ h2.titulo-seccion img {
 }
 
 /*Invitados*/
-.invitados-charlas-digitales{
+.invitados-charlas-digitales {
     margin-bottom: 150px;
 }
+
 .invitados-charlas-digitales .invitado {
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    align-self: flex-start;
+    margin-bottom: 70px;
+    width: 26%;
 }
 
 .invitados-charlas-digitales .invitado img {
@@ -396,7 +399,7 @@ h2.titulo-seccion img {
 
 .invitados-charlas-digitales p {
     margin-bottom: 0px;
-   /* background: #00C853;*/
+    /* background: #00C853;*/
     color: black;
     text-align: center;
     /*text-transform: uppercase;*/
@@ -461,17 +464,20 @@ h2.titulo-seccion img {
     width: 100%;
 }
 
-.agenda  .tab-pane .fecha{
+.agenda .tab-pane .fecha {
     text-align: center;
     font-weight: bold;
     color: black;
     margin: 40px 0px 0px 0px;
 }
 
-.agenda  .tab-pane p{
+.agenda .tab-pane p {
+    font-size: 1.5em;
     text-align: center;
     margin-bottom: 40px;
     letter-spacing: 1px;
+    font-weight: bold;
+    color: #BF43D4;
 }
 
 
@@ -599,6 +605,14 @@ footer .linea-decoracion {
     }
 }
 
+
+@media(max-width:1100px) {
+    .invitados-charlas-digitales .invitado {
+        width: 30%;
+    }
+}
+
+
 @media(max-width:960px) {
     header ul {
         padding-right: 0px;
@@ -624,7 +638,9 @@ footer .linea-decoracion {
         padding: 0px;
         margin: 0px;
     }
+
 }
+
 
 @media(max-width:900px) {
     header ul a {
@@ -634,6 +650,9 @@ footer .linea-decoracion {
     h2.titulo-seccion {
         font-size: 1.6em;
     }
+    .invitados-charlas-digitales .invitado {
+        width: 33%;
+    }
 }
 
 @media(max-width:840px) {
@@ -641,6 +660,7 @@ footer .linea-decoracion {
         margin-top: 30px;
         width: 150px;
     }
+
 }
 
 @media(max-width:768px) {
@@ -736,9 +756,14 @@ footer .linea-decoracion {
         text-align: center;
         padding: 30px 30px 60px 30px;
     }
+    
+    .invitados-charlas-digitales{
+        max-width: 90%;
+    }
 
     .invitados-charlas-digitales .invitado {
         margin-bottom: 50px;
+        width: 50%;
     }
 
     .invitados-charlas-digitales .invitado img {
@@ -833,6 +858,10 @@ footer .linea-decoracion {
     .colaboradores .org p {
         font-size: 0.9em;
     }
+    .invitados-charlas-digitales .invitado {
+        width: 80%;
+    }
+
 
 }
 
